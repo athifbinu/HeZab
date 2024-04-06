@@ -16,7 +16,7 @@ const Home = () => {
         style={{ backgroundImage: `url(${backgroundImg})` }}
       >
         <div className="text-center">
-          <h1 className="text-5xl font-bold text-black mb-4" style={{marginTop:"-138px"}}>
+          <h1 className=" text-5xl font-bold text-black mb-4 " style={{marginTop:"-138px"}}>
             JUSTICE, EXPERTISE, <br /> <br />
             DEDICATION
           </h1>

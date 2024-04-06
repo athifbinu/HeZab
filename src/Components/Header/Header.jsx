@@ -1,96 +1,57 @@
 import React, { useState } from "react";
+import { IoMenu } from "react-icons/io5";
+import { IoMdClose } from "react-icons/io";
 import { Link } from "react-router-dom";
 import logo from "../../assets/Images/logo.png";
-import { IoMenu } from "react-icons/io5";
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const Links = [
+    { name: "Home", link: "/" },
+    { name: "About", link: "/" },
+    { name: "Practice Areas", link: "/" },
+    { name: "Library", link: "/" },
+    { name: "Blog And Events", link: "/" },
+    { name: "Our Team", link: "/" },
+    { name: "carers", link: "/" },
+    { name: "Contact Us", link: "/" },
+  ];
+
+  const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-lg">
-      <nav className="container mx-auto flex items-center justify-between py-4 ">
-        <div className="flex items-center">
+    <div className="shadow-md w-full fixed top-0 left-0">
+      <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
+        <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800">
           <Link to="/" className="mr-4">
             <img src={logo} alt="Logo" className="h-20" />
           </Link>
         </div>
 
-        <div className="hidden md:flex  space-x-12 font-bold">
-          <Link to="#" className="text-black hover:text-yellow-600">
-            Home
-          </Link>
-          <Link to="#" className="text-black hover:text-yellow-600">
-            Home
-          </Link>
-          <Link to="#" className="text-black hover:text-yellow-600">
-            Home
-          </Link>
-          <Link to="#" className="text-black hover:text-yellow-600">
-            Home
-          </Link>
-          <Link to="#" className="text-black hover:text-yellow-600">
-            Home
-          </Link>
-          <Link to="#" className="text-black hover:text-yellow-600">
-            Home
-          </Link>
-          <Link to="#" className="text-black hover:text-yellow-600">
-            Home
-          </Link>
-          <Link to="#" className="text-black hover:text-yellow-600">
-            Home
-          </Link>
-          <Link to="#" className="text-black hover:text-yellow-600">
-            Home
-          </Link>
+        <div
+          onClick={() => setOpen(!open)}
+          className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+        >
+          {open ? <IoMdClose /> : <IoMenu />}
         </div>
 
-        <div className="md:hidden">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="text-black focus:outline-none"
-          >
-            <IoMenu />
-          </button>
-        </div>
-      </nav>
-
-      {isOpen && (
-        <div className="md:hidden  bg-gray-700 absolute">
-          <div className="px-2 py-3 space-y-2">
-            <Link to="#" className="text-black hover:text-yellow-600">
-              Home
-            </Link>
-            <Link to="#" className="text-black hover:text-yellow-600">
-              Home
-            </Link>
-            <Link to="#" className="text-black hover:text-yellow-600">
-              Home
-            </Link>
-            <Link to="#" className="text-black hover:text-yellow-600">
-              Home
-            </Link>
-            <Link to="#" className="text-black hover:text-yellow-600">
-              Home
-            </Link>
-            <Link to="#" className="text-black hover:text-yellow-600">
-              Home
-            </Link>
-            <Link to="#" className="text-black hover:text-yellow-600">
-              Home
-            </Link>
-            <Link to="#" className="text-black hover:text-yellow-600">
-              Home
-            </Link>
-            <Link to="#" className="text-black hover:text-yellow-600">
-              Home
-            </Link>
-          </div>
-        </div>
-      )}
-    </header>
+        <ul
+          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+            open ? "top-20 " : "top-[-490px]"
+          }`}
+        >
+          {Links.map((link) => (
+            <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
+              <a
+                href={link.link}
+                className="text-gray-800 hover:text-gray-400 duration-500"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
   );
 };
 
 export default Header;
-
-
