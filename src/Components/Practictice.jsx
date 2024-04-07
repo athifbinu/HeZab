@@ -10,7 +10,7 @@ const Practictice = () => {
           </h1>
         </div>
         <div>
-          <div className="flex justify-between mb-6">
+          <div className="  flex-col md:flex-row md:justify-between md:mb-6  ">
             <div className="w-72">
               <div className="flex items-center gap-3 mb-1">
                 <FaRegBuilding className="text-yellow-200e" />
@@ -57,7 +57,7 @@ const Practictice = () => {
             </div>
           </div>
 
-          <div className="flex justify-between mb-6">
+          <div className="flex-col md:flex-row md:justify-between md:mb-6">
             <div className="w-72">
               <div className="flex items-center gap-3 mb-1">
                 <FaRegBuilding className="text-yellow-200e" />
@@ -104,7 +104,7 @@ const Practictice = () => {
             </div>
           </div>
 
-          <div className="flex justify-between">
+          <div className="flex-col md:flex-row md:justify-between md:mb-6">
             <div className="w-72">
               <div className="flex items-center gap-3 mb-1">
                 <FaRegBuilding className="text-yellow-200e" />

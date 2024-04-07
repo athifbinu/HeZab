@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../slide.css";
+import "../Styles/slide.css";
 import Team from "../assets/data";
 import { IoCloseCircle } from "react-icons/io5";
 
@@ -17,8 +17,8 @@ const Slide = () => {
   };
 
   return (
-    <div className="slider">
-      <div className="flex gap-16 slide-track">
+    <div className="slider ">
+      <div className="flex gap-16 slide-track ">
         {Team.map((member) => (
           <div
             key={member.id}

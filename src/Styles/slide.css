@@ -1,7 +1,6 @@
 .slider {
   height: 500px;
   margin: auto;
-  position: relative;
   width: 100%;
   display: grid;
   align-items: center;
@@ -12,6 +11,7 @@
   display: flex;
   width: calc(250 * 18);
   animation: scroll 50s linear infinite;
+
 }
 .slide-track:hover {
   animation-play-state: paused;

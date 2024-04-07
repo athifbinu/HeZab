@@ -36,7 +36,7 @@ const Home = () => {
         <Count />
       </section>
 
-      <section>
+      <section className="mb-7">
         <Practictice />
       </section>
 

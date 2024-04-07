@@ -4,9 +4,8 @@ import ContactbackgoundImg from "../assets/Images/andreas-m-Ek3-ORVnI0A-unsplash
 const ContactForm = () => {
   return (
     <div
-      className="bg-cover bg-center "
-
-      style={{ backgroundImage: `url(${ContactbackgoundImg})` }}
+      className="bg-cover bg-center"
+      style={{backgroundImage: `url(${ContactbackgoundImg})` }}
     >
       <div className="container">
         <div class="max-w-screen-md mx-auto p-5">
@@ -84,3 +83,5 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
+ContactForm.js

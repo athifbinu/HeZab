@@ -1,0 +1,11 @@
+@media (max-width: 800px) {
+       .mr{
+        margin: 18px;
+       }
+       .fs{
+        font-size: 46px;
+       }
+       .gp{
+        gap: 29px;
+       }
+  }

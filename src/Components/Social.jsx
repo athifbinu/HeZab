@@ -15,6 +15,8 @@ const Social = () => {
             <FaInstagramSquare/>
           </div>
       </section>
+
+
     </div>
   );
 }

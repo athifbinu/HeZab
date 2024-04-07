@@ -45,17 +45,17 @@ const Count = () => {
       <div className=" bg-gradient-to-r from-slate-200 to-gray-300">
         <div className="flex justify-between p-8">
           <div className="text-black">
-            <h1 className="text-center text-6xl font-bold mb-4">{count1}</h1>
+            <h1 className="text-center text-6xl font-bold mb-4 fs">{count1}</h1>
             <p>Books Written</p>
           </div>
 
           <div className="text-black">
-            <h1 className="text-center text-6xl font-bold mb-4">{count2}</h1>
+            <h1 className="text-center text-6xl font-bold mb-4 fs">{count2}</h1>
             <p>Books Written</p>
           </div>
 
           <div className="text-black">
-            <h1 className="text-center text-6xl font-bold mb-4">{count3}</h1>
+            <h1 className="text-center text-6xl font-bold mb-4 fs">{count3}</h1>
             <p>Books Written</p>
           </div>
         </div>
