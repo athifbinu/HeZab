@@ -37,6 +37,44 @@ const Team = [
     name: "ALAA ZEWAIL",
     position: "advocate",
   },
+  {
+    id: "1",
+    img: imgThree,
+    name: "ALAA ZEWAIL",
+    position: "advocate",
+  },
+
+  {
+    id: "1",
+    img: imgFive,
+    name: "ALAA ZEWAIL",
+    position: "advocate",
+  },
+  {
+    id: "1",
+    img: imgSix,
+    name: "ALAA ZEWAIL",
+    position: "advocate",
+  },
+  {
+    id: "1",
+    img: imgThree,
+    name: "ALAA ZEWAIL",
+    position: "advocate",
+  },
+
+  {
+    id: "1",
+    img: imgFive,
+    name: "ALAA ZEWAIL",
+    position: "advocate",
+  },
+  {
+    id: "1",
+    img: imgSix,
+    name: "ALAA ZEWAIL",
+    position: "advocate",
+  },
 ];
 
-export default Team
+export default Team;
