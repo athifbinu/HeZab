@@ -15,7 +15,7 @@ import { FaRegClock } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="py-32 " style={{ backgroundColor: "#e6e2e2" }}>
-      <div className="container flex  justify-between  ">
+      <div className="container flex  justify-between d-n  ">
         <div className="logo-col col-span-2 sm:col-span-1">
           <Link>
             <img className="mb-10 w-72" alt="Omnifood logo" src={footerlogo} />
